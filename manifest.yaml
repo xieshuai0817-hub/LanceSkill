@@ -1,0 +1,30 @@
+schema_version: 1
+name: LanceSkill
+description: 公開可重複使用的 Codex Skill 工作流集合
+source:
+  kind: user-global-skills
+  local_root: redacted
+  selection_policy: public-safe-only
+synced_at: 2026-10-18
+skills:
+  - article-noah
+  - brainstorming
+  - code-review
+  - cola-uiux-game-design
+  - diagnosing-bugs
+  - draw
+  - humanizer-zh-tw
+  - implement
+  - presentation-coach
+  - project-init
+  - qa
+  - research
+  - tdd
+  - ui-ux-pro-max
+  - video-spec-builder
+excluded:
+  - startup: contains a private local Vault path
+  - shutdown: contains a private local Vault path and local synchronization assumptions
+  - .system: host-managed system skills
+  - plugin-cache: third-party or host-managed plugin resources
+  - local-supporting-resources: scripts, datasets, assets, and executables were not exported
